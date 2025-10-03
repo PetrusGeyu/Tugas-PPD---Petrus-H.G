@@ -1,0 +1,98 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tampilan body */
+body {
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form container */
+form {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+/* Judul */
+form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Label */
+label {
+  font-weight: bold;
+  display: inline-block;
+  margin: 8px 0 5px;
+  color: #444;
+}
+
+/* Input, textarea, select */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37,99,235,0.3);
+}
+
+/* Checkbox dan radio */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Tombol */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+button:not([type="submit"]) {
+  background-color: #ef4444;
+  color: white;
+  transition: 0.3s;
+}
+
+button:not([type="submit"]):hover {
+  background-color: #dc2626;
+}

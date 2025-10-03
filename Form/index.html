@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="" method="post">
+      <h1>Form Pendaftaran</h1>
+
+      <label for="nama-depan">Nama Depan : </label>
+      <input type="text" id="nama-depan" name="nama_depan" />
+      <br />
+
+      <label for="nama-belakang">Nama Belakang : </label>
+      <input type="text" id="nama-belakang" name="nama_belakang" placeholder="Nama Belakang Anda" />
+      <br />
+
+      <label for="password">Password : </label>
+      <input type="password" id="password" name="password" />
+      <br />
+
+      <label for="alamat">Alamat : </label>
+      <textarea id="alamat" name="alamat" rows="4"></textarea>
+      <br />
+
+      <label>Olahraga Favorit : </label>
+      <input type="checkbox" id="sepakbola" name="olahraga_favorit" value="sepakbola" />
+      <label for="sepakbola">Sepak Bola</label>
+
+      <input type="checkbox" id="bulutangkis" name="olahraga_favorit" value="bulutangkis" />
+      <label for="bulutangkis">Bulu Tangkis</label>
+
+      <input type="checkbox" id="tennis" name="olahraga_favorit" value="tennis" />
+      <label for="tennis">Tennis</label>
+      <br />
+
+      <label>Jenis Kelamin : </label>
+      <input type="radio" id="pria" name="jenis_kelamin" value="pria" />
+      <label for="pria">Pria</label>
+
+      <input type="radio" id="wanita" name="jenis_kelamin" value="wanita" />
+      <label for="wanita">Wanita</label>
+      <br />
+
+      <label for="olahraga">Olahraga : </label>
+      <select id="olahraga" name="olahraga">
+        <option value="">Pilih Olahraga</option>
+        <option value="tennis">Tennis</option>
+        <option value="sepakbola">Sepak Bola</option>
+        <option value="basket">Basket</option>
+      </select>
+      <br /><br />
+
+      <button type="submit">Save</button>
+      <button>Hapus</button>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>

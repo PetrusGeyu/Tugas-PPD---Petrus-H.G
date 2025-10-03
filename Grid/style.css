@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: steelblue;
+  color: black;
+  text-align: center;
+  padding: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 80vh;
+}
+
+.left {
+  text-align: center;
+  background-color: burlywood;
+}
+
+.left a {
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.left ul {
+  padding-top: 20px;
+}
+
+.left a:hover {
+  color: aquamarine;
+}
+
+.right {
+  text-align: center;
+}
+
+.right h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 1rem;
+}
+
+.right p {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+footer {
+  position: sticky;
+  text-align: center;
+  color: black;
+  background: steelblue;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+button {
+  padding: 8px;
+  margin-top: 20px;
+}
+
+
+/* Popup overlay */
+.popup {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gambar di popup */
+.popup img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+/* Tombol close */
+.popup span {
+  position: absolute;
+  top: 20px; right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kota di Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kota di Indonesia</h1>
+    </header>
+    
+    <main>
+        <section class="left">
+            <nav>
+                <ul>
+                    <li><a href="#jakarta">Jakarta</a></li>
+                    <li><a href="#palangka">Palangka</a></li>
+                    <li><a href="#banjarmasin">Banjarmasin</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="right">
+            <h2>About This</h2>
+
+            <article id="jakarta">
+                <h3>Jakarta</h3>
+                <p>Ibukota Indonesia, pusat pemerintahan dan bisnis.</p>
+                <button class="btn-kota" data-img="jakarta.jpg">Klik</button>
+            </article>
+
+            <article id="banjarmasin">
+                <h3>Banjarmasin</h3>
+                <p>Kota seribu sungai yang ada di Kalimantan Selatan.</p>
+                <button class="btn-kota" data-img="banjarmasin.jpg">Klik</button>
+            </article>
+
+            <article id="palangka">
+                <h3>Palangka</h3>
+                <p>Ibukota Kalimantan Tengah, dikenal dengan budaya Dayak.</p>
+                <button class="btn-kota" data-img="palangka.jpg">Klik</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2025 &copy; All Rights Reserved</p>
+    </footer>
+
+    <!-- Popup modal -->
+    <div id="popup" class="popup">
+        <span id="close">&times;</span>
+        <img id="popup-img" src="https://cdn.betahita.id/5/8/9/7/5897_840x576.jpeg" alt="Popup Gambar">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
